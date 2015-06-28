@@ -4,9 +4,10 @@ Created on Fri Jun 26 17:32:43 2015
 
 @author: dom
 """
-from player import Player
-from dealer import Dealer
-from deck import Deck
+
+from players.player import Player
+from players.dealer import Dealer
+from cards.deck import Deck
 
 class Game:
     def __init__(self):
@@ -34,7 +35,7 @@ game = Game()
 
 dom = Player('Dom', 1000)
 stad = Player('Jordan', 5)
-dealer = Dealer('Crack Ass Dealer', 10000)
+dealer = Dealer('Crack Ass Dealer')
 
 game.addPlayer(dom)
 game.addPlayer(dealer)
@@ -46,6 +47,8 @@ while numHands < 1000:
     game.deck.dealHand(game.players)
     game.showAllHands()
     
-    game.clearAllHands()
+    game.clearTable()
+    print '\n'
+    
 
 

@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 
-from hand import Hand
+from cards.hand import Hand
 
 class Dealer:
-    def __init__(self):
+    def __init__(self, name):
+        self.name = name
         self.hand = Hand()
 

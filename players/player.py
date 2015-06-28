@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from hand import Hand
+from cards.hand import Hand
 
 class Player:
     def __init__(self, name, money):
