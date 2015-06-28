@@ -9,10 +9,7 @@ class Deck:
     
     # Initializer for Deck class
     def __init__(self):
-        self.cards = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A',
-                      '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A',
-                      '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A',
-                      '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
+        self.cards = Deck.freshDeck
         self.shuffleDeck()
     
     # Returns randomly selected card from deck
@@ -28,5 +25,13 @@ class Deck:
                 
     def shuffleDeck(self):
         shuffle(self.cards)
-        
+    
+    def newDeck(self):
+        self.cards = Deck.freshDeck
+    
+    
+    freshDeck = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A',
+                 '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A',
+                 '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A',
+                 '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
         
