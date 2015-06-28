@@ -22,13 +22,6 @@ class Hand:
             string += card + ' '
         string += 'with value ' + str(self.value)
         print string
-    
-#    def getHandVal(self):
-#        tempVal = 0
-#        for i in range(len(self.cards)):
-#            tempVal += Hand.value[self.cards[i]]
-#        return tempVal
-#    
         
     value = {'2': 2,
             '3': 3,
