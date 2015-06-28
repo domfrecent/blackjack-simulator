@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
 
-import random
+from random import shuffle
 
 class Deck:
+    
+    # To use more than one deck (as is done in most casinos, ~4 decks) instantiate 
+    # multiple decks and add them together
     
     # Initializer for Deck class
     def __init__(self):
@@ -24,6 +27,6 @@ class Deck:
                 player.hand.receiveCard(tempCard)
                 
     def shuffleDeck(self):
-        random.shuffle(self.cards)
+        shuffle(self.cards)
         
         
