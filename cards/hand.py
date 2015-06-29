@@ -16,13 +16,6 @@ class Hand:
         self.cards = []
         self.value = 0
         
-    def showHand(self):
-        string = ''
-        for card in self.cards:
-            string += card + ' '
-        string += 'with value ' + str(self.value)
-        print string
-        
     value = {'2': 2,
              '3': 3,
              '4': 4,
