@@ -13,3 +13,6 @@ class Dealer:
             string += card + ' '
         string += 'with value ' + str(self.hand.value)
         print string
+    
+    def getUpCard(self):
+        return Hand.cardValue[self.hand.cards[1]]
